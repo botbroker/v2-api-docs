@@ -7,6 +7,9 @@ in any capacity.
 
 ### Introduction
 
+The base URL is `https://api.botbroker.io/api/v2` and all API routes will come
+after this base URL.
+
 There's just a few main resources in this API that you should understand:
 
 1. **Bots** are a type of product. They can have asks, bids, and sales
