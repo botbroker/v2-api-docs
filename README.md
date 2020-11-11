@@ -2,7 +2,7 @@
 
 Welcome to the documentation for the v2 API for [BotBroker](https://botbroker.io). If you're moving from the private v1, the information is more organized and in a more flexible format. There's also performance improvements.
 
-API keys will be given out on a request basis. To request, DM [@66_shrey](https://twitter.com/66_shrey) on Twitter. Any API update announcements will be made on that Twitter account as well, so I'd follow if you'll be using the API
+API keys will be given out on a request basis. To request, DM [@66_shrey](https://twitter.com/66_shrey) on Twitter. Any API updates will be posted there as well, so I'd follow if you'll be using the API
 in any capacity.
 
 ### Introduction
