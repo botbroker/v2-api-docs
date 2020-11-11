@@ -42,3 +42,27 @@ Here's an example:
 }
 ```
 
+### Pagination
+
+Requests in this API that involve lists are paginated unless they explicity state that they aren't. To paginate through a list,
+supply a `page` url parameter. For example: `/v2/bots?page=2` will take you to the 2nd page of the list.
+
+If a request is paginated, it'll come with a `pagination` parameter that looks like this:
+
+```json
+{
+  "pagination": {
+    "next": 2,
+    "page": 1,
+    "per_page": 20,
+    "prev": null,
+    "total_count": 40
+  },
+  "paginated_list": [...]
+}
+```
+
+`next` is the next page in the list. `prev` is the previous page. Both of those can be null if there's no previous/next page. `per_page` is the # of items on the current page, and `total_count` is the size of the entire list.
+
+
+
