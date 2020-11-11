@@ -3,7 +3,7 @@
 ### Get all sales 
 `GET` /sales?product_id=:product_id
 
-Returns a list of sales (sorted by the ID) in the following format:
+Returns a list of sales in the following format:
 ```json
 {
   "pagination": {...},
@@ -74,16 +74,17 @@ Required parameters:
 ### Get specific sale
 `GET` /sales/:id
 
-Returns an ask object in the following format:
+Returns a sale object in the following format:
 ```json
 {
   "sale": {
     "id": 77912,
     "created_at": 1604356618,
-    "expiration": 3155840024,
+    "expiration": null,
     "key_type": "lifetime",
     "matched_at": 1604364551,
     "price": 470,
+    "product_id": 30,
     "specification": null
   }
 }

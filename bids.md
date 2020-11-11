@@ -1,9 +1,9 @@
-# Ask endpoints
+# Bid endpoints
 
-### Get all asks 
-`GET` /asks?product_id=:product_id
+### Get all bids 
+`GET` /bids?product_id=:product_id
 
-Returns a list of asks in the following format:
+Returns a list of bids in the following format:
 ```json
 {
   "pagination": {...},
@@ -11,20 +11,20 @@ Returns a list of asks in the following format:
   "order": "desc",
   "asks": [
     {
-      "id": 79502,
-      "created_at": 1605047025,
+      "id": 69714,
+      "created_at": 1603649484,
       "expiration": null,
       "key_type": "lifetime",
-      "price": 365,
+      "price": 200,
       "product_id": 30,
       "specification": null
     },
     {
-      "id": 79502,
-      "created_at": 1605047025,
+      "id": 69714,
+      "created_at": 1603649484,
       "expiration": null,
       "key_type": "lifetime",
-      "price": 365,
+      "price": 200,
       "product_id": 30,
       "specification": null
     }
@@ -41,18 +41,18 @@ Optional parameters:
 - `order` the direction to sort the list in: desc (default) or asc
 - `key_type` either "lifetime" or "renewal". Will return both types if left blank
 
-### Get specific ask
-`GET` /asks/:id
+### Get specific bid
+`GET` /bids/:id
 
-Returns an ask object in the following format:
+Returns a bid object in the following format:
 ```json
 {
-  "ask": {
-    "id": 79573,
-    "created_at": 1605067860,
+  "bid": {
+    "id": 71687,
+    "created_at": 1605015032,
     "expiration": null,
     "key_type": "lifetime",
-    "price": 365,
+    "price": 230,
     "product_id": 30,
     "specification": null
   }
