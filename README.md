@@ -20,7 +20,12 @@ There's just a few main resources in this API that you should understand:
 
 Each of these have their own endpoints, and will have their own documentation file in this repo.
 
-### Structure
+### Parameters
+
+All parameters in `GET` requests should be specified in the URL unless stated otherwise. In all
+`POST` requests, parameters should be sent via a json body.
+
+### Success / Errors
 
 Each successful request will either be of status code `200` or `204` (if the body is empty). On errors you'll get a status code along with a 
 `message` parameter describing the error in more detail. Here's an example:
